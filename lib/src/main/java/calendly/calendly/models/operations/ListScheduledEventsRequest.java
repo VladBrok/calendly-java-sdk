@@ -11,8 +11,8 @@ public class ListScheduledEventsRequest {
      * The number of rows to return
      */
     @SpeakeasyMetadata("queryParam:style=form,explode=true,name=count")
-    public Double count;
-    public ListScheduledEventsRequest withCount(Double count) {
+    public Integer count;
+    public ListScheduledEventsRequest withCount(Integer count) {
         this.count = count;
         return this;
     }
