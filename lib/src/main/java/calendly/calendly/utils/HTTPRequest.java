@@ -50,6 +50,13 @@ public class HTTPRequest {
         this.headers.put(key, headerValues);
         return this;
     }
+    
+    public HTTPRequest udpateHeader(String key, String value) {
+        List<String> headerValues = new ArrayList<String>();
+        headerValues.add(value);
+        this.headers.put(key, headerValues);
+        return this;
+    }
 
     public HTTPRequest addQueryParam(NameValuePair param) {
         this.queryParams.add(param);
